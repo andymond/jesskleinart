@@ -1,0 +1,120 @@
+@keyframes slowpulse {
+  0%   {background-color: #ffa889;}
+  9%  {background-color: #ffc989;}
+  18%  {background-color: #ffd989;}
+  27%  {background-color: #ffef89;}
+  36%  {background-color: #ecf48b;}
+  45%  {background-color: #bce88b;}
+  54%  {background-color: #a8fc8a;}
+  63%  {background-color: #a2e589;}
+  72% {background-color: #84e0e0;}
+  80% {background-color: #84ade0;}
+  89% {background-color: #ffa889;}
+  100% {background-color: #ffa889;}
+}
+
+body {
+  min-width: 300px;
+  animation-name: slowpulse;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cutive Mono', monospace;
+}
+
+header {
+  width: 100vw;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-info {
+  text-align: center;
+  min-width: 350px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.navlinks {
+  margin: 20px;
+}
+
+.navlinks a {
+  margin: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.navlinks a:hover {
+  color: magenta;
+}
+
+@keyframes reversepulse {
+  100%   {color: #000000;}
+  90%  {color: #ffc989;}
+  81%  {color: #ffd989;}
+  72%  {color: #ffef89;}
+  63%  {color: #ecf48b;}
+  54%  {color: #bce88b;}
+  45%  {color: #a8fc8a;}
+  36%  {color: #a2e589;}
+  27% {color: #84e0e0;}
+  18% {color: #84ade0;}
+  9% {color: #ffa889;}
+  0% {color: #000000;}
+}
+
+.email {
+  margin: 10px;
+  animation-name: reversepulse;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+}
+
+.sparkles {
+  max-height: 100px;
+  max-width: 100px;
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-image {
+  position: relative;
+  margin: 25px;
+}
+
+.blurb-info {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.blurb-info p {
+  margin: 5px 0px 5px 10px;
+}
+
+.outer-image:hover .blurb-info {
+  display: block;
+  background-color: #7777771A;
+  color: white;
+}
+
+.image {
+  max-width: 95vw;
+  max-height: 95vh;
+}
